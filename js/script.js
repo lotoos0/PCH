@@ -16,6 +16,9 @@ const fightButton = document.querySelector('.fight-btn');
 // Pobranie referencji do osobnego "okna" po walce
 const resultOverlay = document.querySelector('.result-overlay');
 
+// Pobranie referencji do przycisku "Potwierdź" wewnątrz elementu "result-overlay"
+const confirmButton = document.querySelector('.result-overlay .result-confirm-btn');
+
 
 
 // Inicjalizacja zmiennej przechowującej otwarty sektor
@@ -78,4 +81,10 @@ fightButton.addEventListener('click', () => {
   // Otwarcie div 'result-overlay'
   resultOverlay.style.opacity = '1';
   resultOverlay.style.visibility = 'visible';
+});
+
+// Obsługa kliknięcia przycisku "Potwierdź" w celu zamknięcia elementu "result-overlay"
+confirmButton.addEventListener('click', () => {
+  resultOverlay.style.opacity = '0';
+  resultOverlay.style.visibility = 'hidden';
 });

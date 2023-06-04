@@ -93,7 +93,7 @@ header {
 }
 
 /* ATTACK BUTTON WINDOW ETC. */
-
+  
 .attack-overlay {
   opacity: 0;
   visibility: hidden;
