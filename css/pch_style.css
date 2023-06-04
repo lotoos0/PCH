@@ -369,8 +369,9 @@ NOTE: this is 'OK' button
 */
 .result-confirm-btn {
   display: flex;
-  background: linear-gradient(0deg, rgba(186,115,47,1) 0%, rgba(141,73,28,1) 25%, rgba(141,73,28,1) 73%, rgba(186,115,47,1) 100%);
+  background: linear-gradient(0deg, rgba(173,103,49,1) 0%, rgba(173,103,49,1) 64%, rgba(227,193,87,1) 100%);
   border: 1px solid #000;
+  color: #ffd9c2;
   align-items: center;
   justify-content: center;
   width: 30%;
@@ -378,7 +379,6 @@ NOTE: this is 'OK' button
 }
 
 .result-confirm-btn:hover {
-  background: linear-gradient(0deg, rgb(186, 163, 47) 0%, rgba(141,73,28,1) 25%, rgba(141,73,28,1) 73%, rgb(186, 163, 47) 100%);
-  
+  background: linear-gradient(0deg, rgb(212, 127, 62) 0%, rgb(196, 117, 56) 64%, rgb(255, 216, 100) 100%);
 }
 
