@@ -1,0 +1,133 @@
+.result-overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  .result-modal {
+    display: flex;
+    flex-direction: column;
+    background-color: #583419;
+    border: 2px solid #7f522b;
+    border-radius: 20px;
+    width: 40%;
+    height: 70%;
+    overflow: hidden;
+  }
+  
+  .result-top-header {
+    border: 1px solid #583419;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(40,23,16,1) 0%, rgba(39,23,7,1) 100%);
+    margin: 1%;
+    height: 30%;
+  }
+  
+  .result-my-army {
+    border: 1px solid #000000;
+    background-color: #583419;
+    width: 60%;
+    height: 100%;
+  }
+  
+  .result-header-my-army {
+    color: #5d7181;
+    text-align: center;
+    font-weight: 100;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(34,29,29,1) 0%, rgba(50,44,42,1) 100%);
+  }
+  
+  .result-header-my-army h5 {
+    margin: 0;
+  }
+  
+  .result-enemy-army {
+    border: 1px solid #000000;
+    background-color: #58351f;
+    width: 40%;
+    height: 100%;
+    border-left: none;
+  }
+  
+  .result-container-army {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* NOTE: this is result whole container with units: player/enemy */
+  .units-container {
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-row-gap: 5px;
+    margin: 2% 4% 5% 5%;
+  }
+  
+  .enemy-units-container { 
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-row-gap: 5px;
+    margin: 2% 5% 5% 5%;
+  }
+  
+  /* END container units */
+  
+  /*
+    FIXME: change colors button, hover too .heal-btn
+  */
+  
+  .heal-btn {
+    /* display: none; /* Przycisk jest ukryty na początku */
+    margin-right: 20%;
+    margin-top: 20%; 
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffd8c2;  
+    background: linear-gradient(0deg, rgba(92,43,5,1) 0%, rgba(151,98,23,1) 64%, rgba(230,212,161,1) 100%);
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;  
+    height: 45%;
+  }
+  
+  .heal-btn:hover {
+    background: linear-gradient(0deg, rgb(67, 31, 3) 0%, rgb(115, 74, 17) 64%, rgb(255, 209, 84) 100%);;
+  }
+  
+  
+  
+  .btn-container-center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  /*
+  NOTE: this is 'OK' button
+  */
+  .result-confirm-btn {
+    display: flex;
+    background: linear-gradient(0deg, rgba(173,103,49,1) 0%, rgba(173,103,49,1) 64%, rgba(227,193,87,1) 100%);
+    border: 1px solid #000;
+    color: #ffd9c2;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 5px 0 0 0;
+  }
+  
+  .result-confirm-btn:hover {
+    background: linear-gradient(0deg, rgb(212, 127, 62) 0%, rgb(196, 117, 56) 64%, rgb(255, 216, 100) 100%);
+  }
